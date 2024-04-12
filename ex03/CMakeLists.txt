@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 98)
 set(CMAKE_CXX_COMPILER clang++-17)
 
 # Add the executable target
-file(GLOB sources main.cpp FragTrap.cpp ClapTrap.cpp ScavTrap.cpp *.hpp)
+file(GLOB sources main.cpp DiamondTrap.cpp FragTrap.cpp ClapTrap.cpp ScavTrap.cpp *.hpp)
 add_executable(DiamondTrap "")
 target_sources(DiamondTrap PRIVATE ${sources})
 set_target_properties(DiamondTrap PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR})
