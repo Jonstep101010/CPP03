@@ -164,11 +164,11 @@ void ClapTrap::setAttackDamage(int attack_damage) {
 
 void ClapTrap::printStats(std::string header) const {
 	std::cout << "\n\033[0;93m********" << header
-			  << "********\n\nHitPoint: " << std::setw(6)
+			  << "********\n\nHitPoints: " << std::setw(6)
 			  << this->getHitPoints()
-			  << "\nEnergy Point: " << std::setw(2)
+			  << "\nEnergy Points: " << std::setw(2)
 			  << this->getEnergyPoints()
-			  << "\nAttack Point: " << std::setw(2)
+			  << "\nAttack Points: " << std::setw(2)
 			  << this->getAttackDamage() << "\033[0;39m\n\n";
 }
 
