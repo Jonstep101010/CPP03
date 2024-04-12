@@ -1,8 +1,12 @@
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
+#include <iostream>
 
 int main() {
-	FragTrap zombie("Zombie");
-	FragTrap human("Human");
+	DiamondTrap zombie("Zombie");
+	DiamondTrap human("Human");
+	DiamondTrap copy(zombie);
+
+	copy.printStats("Copy");
 
 	zombie.printStats("Default");
 
@@ -35,5 +39,8 @@ int main() {
 	human.printStats("Human");
 
 	zombie.highFivesGuys();
+	std::cout << "Human of DiamondTrap attacks as ScavTrap\n";
+	human.attack("Zombie");
+	human.whoAmI();
 	return 0;
 }

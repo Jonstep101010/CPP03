@@ -6,7 +6,7 @@
 #define FT_ENERGY 100
 #define FT_DAMAGE 30
 
-class FragTrap : public ClapTrap {
+class FragTrap : virtual public ClapTrap {
 
 public:
 	FragTrap();

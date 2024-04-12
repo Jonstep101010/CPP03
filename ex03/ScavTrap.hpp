@@ -7,7 +7,7 @@
 #define ST_ENERGY 50
 #define ST_DAMAGE 20
 
-class ScavTrap : public ClapTrap {
+class ScavTrap : virtual public ClapTrap {
 
 public:
 	ScavTrap();
