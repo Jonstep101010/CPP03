@@ -14,7 +14,8 @@ FragTrap::FragTrap(std::string Name)
 	std::cout << "FragTrap parametrized constructor called\n";
 }
 
-FragTrap::FragTrap(const FragTrap& src) {
+FragTrap::FragTrap(const FragTrap& src)
+	: ClapTrap() {
 	std::cout << "FragTrap copy constructor called\n";
 	*this = src;
 }

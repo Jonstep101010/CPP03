@@ -16,9 +16,9 @@ public:
 	ClapTrap& operator=(ClapTrap const& rhs);
 
 	// members
-	void      attack(const std::string& target);
-	void      takeDamage(unsigned int amount);
-	void      beRepaired(unsigned int amount);
+	void attack(const std::string& target);
+	void takeDamage(unsigned int amount);
+	void beRepaired(unsigned int amount);
 
 	// getters and setters
 	std::string getName() const;
@@ -31,8 +31,8 @@ public:
 	void        setAttackDamage(int attack_damage);
 
 	// helpers
-	bool		PayEnergy();
-	void        printStats(std::string header) const;
+	bool PayEnergy();
+	void printStats(std::string header) const;
 
 private:
 	std::string Name;

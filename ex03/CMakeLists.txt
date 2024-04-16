@@ -7,7 +7,7 @@ project(DiamondTrap)
 set(CMAKE_CXX_STANDARD 98)
 
 # Set the C++ compiler
-set(CMAKE_CXX_COMPILER clang++-17)
+set(CMAKE_CXX_COMPILER c++)
 
 # Add the executable target
 file(GLOB sources main.cpp DiamondTrap.cpp FragTrap.cpp ClapTrap.cpp ScavTrap.cpp *.hpp)
@@ -16,7 +16,7 @@ target_sources(DiamondTrap PRIVATE ${sources})
 set_target_properties(DiamondTrap PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR})
 
 # Set compiler flags
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -std=c++98 -fno-limit-debug-info")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -std=c++98")
 # Generate compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 

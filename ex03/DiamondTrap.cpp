@@ -18,7 +18,8 @@ DiamondTrap::DiamondTrap(std::string Name)
 	std::cout << "DiamondTrap parametrized constructor called\n";
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap& src) {
+DiamondTrap::DiamondTrap(const DiamondTrap& src)
+	: ClapTrap(), ScavTrap(), FragTrap(){
 	std::cout << "DiamondTrap copy constructor called\n";
 	*this = src;
 }

@@ -36,7 +36,7 @@ public:
 	bool PayEnergy();
 	void printStats(std::string header) const;
 
-private:
+protected:
 	std::string Name;
 	int         Hit_points;
 	int         Energy_points;
